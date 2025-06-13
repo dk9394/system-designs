@@ -1,7 +1,7 @@
 import './styles.css';
 
-import { welcome } from './welcome';
+import { productsContainer } from './products/products';
 
 const root = document.querySelector('#root');
 
-root?.appendChild(welcome);
+root?.appendChild(productsContainer);

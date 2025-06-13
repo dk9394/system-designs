@@ -1,3 +1,5 @@
+/* base color #209CEE */
+
 html {
 	font-size: 16px;
 	margin: 0;
@@ -8,4 +10,21 @@ body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.container {
+	width: calc(100vw - 2rem);
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 900px;
+	}
 }

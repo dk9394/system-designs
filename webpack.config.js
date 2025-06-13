@@ -4,6 +4,7 @@ import { dirname } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -41,6 +42,7 @@ export default {
 			files: 'src/**/*.{js,ts}',
 			fix: true, // Auto-fix lint errors
 		}),
+		new FaviconsWebpackPlugin('./src/favicon.png'),
 	],
 	devServer: {
 		static: path.resolve(__dirname, 'dist'),
